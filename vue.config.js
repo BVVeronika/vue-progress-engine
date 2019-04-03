@@ -32,7 +32,9 @@ module.exports = {
       .loader('svgo-loader');
   },
 
-  publicPath: '/',
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/vue-progress-engine/'
+    : '/',
 
   css: {
     sourceMap: true
