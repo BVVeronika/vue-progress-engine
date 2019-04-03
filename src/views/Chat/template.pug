@@ -1,0 +1,71 @@
+.bChat.d-flex
+  left-panel
+  .bChat-container
+    .bChat-header.bHeader.bContainer.d-flex.justify-content-between
+      .bHeader-leftBlock.d-flex.align-items-center
+        .bHeader-title.mr-3 Online Consultation
+          button.bBtn--resetDefault(type='button')
+            svg-icon(name='Chat/more_icon' svgClass='more')
+        .bHeader-inform 
+          span Feb 22, 2017; 10:30-11:00 am, Approved Paid
+
+      .gHeader-action.d-flex.align-items-center
+        button.bBtn--resetDefault(type='button') Help
+        button.bBtn--resetDefault.d-flex.align-items-center(type='button') 
+          svg-icon(name='Chat/plus_icon' svgClass='plus')
+          .ml-1 Support
+
+    .bChat-content.bListGroup
+      .bControlPanel.bContainer.pb-0.d-flex.align-items-center.justify-content-between
+        .bControlPanel-title.bContainer
+          b 
+            | Consultation Note 
+            span.bControlPanel-title--red DRAFT
+            |, Feb 22, 2017
+        .bControlPanel-action.pr-3.d-flex
+          span.mr-3 Show:
+          button.bBtn--resetDefault.text-capitalize.d-flex.mr-3(type='button') 
+            svg-icon.mr-2(name='Chat/list_icon' svgClass='list')
+            span Medical Records
+          button.bBtn--resetDefault.text-capitalize.d-flex(type='button') 
+            svg-icon.mr-2(name='Chat/camera_icon' svgClass='camera')
+            span Images & Videos
+
+      .bListGroup-content.bContainer.pb-0.pt-0
+        ul.list-group
+          li.list-group-item.rounded-0.d-flex.align-items-center.justify-content-between(v-for='item in consultationList.list' :class='{ _active: item.active }')
+            div
+              span.bListGroup-status.mr-3
+              abbr.mr-4(v-if='item.abbr') 
+                b {{ item.abbr }}
+              span.bListGroup-title--withAbbr(v-if='item.title && item.abbr') {{ item.title }}
+              span.bListGroup-title(v-else) {{ item.title }}
+            button.bBtn--resetDefault.bListGroup-btnMore(type='button') 
+              svg-icon(name='Chat/arrow_icon' svgClass='arrow')
+          li.list-group-item.rounded-0(v-if='consultationList.length < 0')
+            | No data
+
+      .bListGroup-action.bContainer.pt-0.pb-0
+        ul.list-group
+          li.list-group-item.rounded-0.d-flex.align-items-center.justify-content-center.border-0.text-center.bg-transparent
+            button.bBtn--resetDefault.bBtn-link.text-capitalize.d-flex(type='button') 
+              svg-icon.mr-2(name='Chat/addendum_icon' svgClass='plus')
+              span Addendum
+      .bListGroup-action.bContainer.pt-0
+        ul.list-group
+          li.list-group-item.rounded-0.d-flex.align-items-center
+            .bListGroup-nameAction Note Options:
+            .ml-4
+              label.mb-0.d-flex.align-items-center
+                input.mr-2(type='checkbox')
+                | Lock from Staff
+
+    .bChat-footer
+      .bFooter.bContainer.d-flex.justify-content-between
+        .bFooter-action
+          button.bBtn--resetDefault.bBtn-link(type='button') Save as Draft
+          button.bBtn--resetDefault.bBtn-link(type='button') Save & Lock
+
+        .bFooter-inform.d-flex.align-items-center
+          svg-icon(name='Chat/save_icon')
+          span.pl-2 All changes saved in 3:58 pm

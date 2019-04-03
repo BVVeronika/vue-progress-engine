@@ -1,0 +1,9 @@
+.bUserPanel.d-flex.bContainer
+  img.bUserPanel-photo.mr-2(:src='userInfo.photo')
+  .bUserPanel-inform
+    .bUserPanel-name {{ userInfo.name }}
+    div
+      | {{ userInfo.age }} y.o., 
+      | {{ userInfo.gender }}, 
+      | {{  userInfo.height }}
+      | {{  userInfo.weight }} lbs

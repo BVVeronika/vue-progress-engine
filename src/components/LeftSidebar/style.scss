@@ -1,0 +1,66 @@
+@import '@/CommonStyles/basis/variables.scss';
+
+.bLeftSidebar {
+  width: 100px;
+  min-height: 100vh;
+  background: lighten($gray, 4.9%);
+}
+
+.bLeftNavbar {
+  padding: 10px 0;
+  width: 100%;
+  background: lighten($gray, 4.9%);
+  font-size: 12px;
+  text-align: center;
+
+  &-item {
+    color: lighten($gray, 15%);
+
+    .router-link-exact-active {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: calc(50% - 5px);
+        right: 0;
+        border: 6px solid transparent;
+        border-right: 7px solid $white;
+      }
+    }
+
+    a {
+      padding: 10px;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+
+  &-textLink {
+    padding-top: 4px;
+    color: lighten($gray, 59.2%);
+    line-height: 1.1;
+  }
+
+  .svg-icon--chat {
+    width: 18px;
+    height: 18px;
+  }
+
+  .svg-icon--medical {
+    width: 17px;
+    height: 18px;
+  }
+
+  .svg-icon--notes {
+    width: 16px;
+    height: 18px;
+  }
+
+  .svg-icon--patient {
+    width: 16px;
+    height: 17px;
+  }
+}

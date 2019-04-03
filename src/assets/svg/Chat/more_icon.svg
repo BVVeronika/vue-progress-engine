@@ -1,0 +1,39 @@
+<svg id="actions1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5" height="21" viewBox="0 0 5 21">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #5c5c5c;
+      }
+
+      .cls-1 {
+        <!-- filter: url(#filter); -->
+      }
+
+      .cls-2 {
+        <!-- filter: url(#filter-2); -->
+      }
+
+      .cls-3 {
+        <!-- filter: url(#filter-3); -->
+      }
+    </style>
+    <filter id="filter" x="0" y="0" width="5" height="5" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#565c6c"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="0" y="8" width="5" height="5" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#565c6c"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="0" y="16" width="5" height="5" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#565c6c"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle class="cls-1" cx="2.5" cy="2.5" r="2.5"/>
+  <circle id="Ellipse_6_copy" data-name="Ellipse 6 copy" class="cls-2" cx="2.5" cy="10.5" r="2.5"/>
+  <circle id="Ellipse_6_copy_2" data-name="Ellipse 6 copy 2" class="cls-3" cx="2.5" cy="18.5" r="2.5"/>
+</svg>

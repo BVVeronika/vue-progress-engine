@@ -1,0 +1,13 @@
+@import '@/CommonStyles/basis/variables.scss';
+
+.bMenu {
+  height: 67px;
+  color: lighten($gray, 59.2%);
+  font-size: 12px;
+
+  .svg-icon--menu {
+    width: 19px;
+    height: 17px;
+    color: lighten($gray, 59.2%);
+  }
+}

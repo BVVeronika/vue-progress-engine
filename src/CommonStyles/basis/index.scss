@@ -1,0 +1,34 @@
+#app {
+  display: flex;
+  overflow: hidden;
+  color: $gray;
+}
+
+.bContainer {
+  padding: 15px;
+  width: 100%;
+}
+
+.bBtn--resetDefault {
+  background: transparent;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.bBtn-link {
+  color: $blue;
+  font-size: 13px;
+  font-style: italic;
+  text-transform: uppercase;
+
+  &:hover {
+    color: darken($blue, 10%);
+  }
+}

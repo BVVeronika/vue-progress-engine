@@ -1,0 +1,75 @@
+@import '@/CommonStyles/basis/variables.scss';
+
+.bMessageRecord {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 19px 10px;
+  background-color: $gray;
+  color: lighten($gray, 59.2%);
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.2;
+
+  &-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: $white;
+    border: none;
+    border-radius: 50%;
+
+    .svg-icon--record {
+      width: 16px;
+      height: 20px;
+    }
+  }
+
+  &-btnDesc {
+    padding-top: 4px;
+    width: 100%;
+    font-size: 13px;
+  }
+
+  &-time {
+    padding-top: 11px;
+    padding-bottom: 1px;
+    color: $white;
+    font-size: 17px;
+  }
+}
+
+.bActionBlock {
+  margin-top: 16px;
+
+  &-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #6c6c6c;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  ._active {
+    color: $red;
+  }
+
+  .svg-icon--mic {
+    width: 18px;
+    height: 20px;
+  }
+
+  .svg-icon--camera {
+    width: 22px;
+    height: 20px;
+  }
+}

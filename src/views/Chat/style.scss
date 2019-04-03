@@ -1,0 +1,119 @@
+@import '@/CommonStyles/basis/variables.scss';
+
+.bHeader {
+  width: 100%;
+  height: 67px;
+  border-bottom: 1px solid $border;
+
+  .svg-icon--more {
+    width: 5px;
+    height: 21px;
+  }
+
+  &-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &-inform {
+    max-width: 230px;
+    color: lighten($gray, 16.2%);
+    font-size: 12px;
+    font-style: italic;
+  }
+}
+
+.bChat {
+  width: 100%;
+
+  &-container {
+    width: 100%;
+    max-height: 100vh;
+  }
+
+  &-content {
+    height: calc(100vh - 67px - 53px);
+    overflow: scroll;
+  }
+}
+
+.bListGroup {
+  background-color: lighten(lighten($gray, 59.2%), 15.5%);
+  color: lighten($gray, 16.2%);
+
+  &-title--withAbbr {
+    font-size: 11px;
+    font-style: italic;
+  }
+
+  &-status {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid $border;
+  }
+
+  li {
+    padding: 0.65rem 1.25rem;
+    background-color: #fafafa;
+  }
+
+  li._active {
+    background-color: $white;
+
+    .bListGroup-status {
+      background-color: $blue;
+      border-color: transparent;
+    }
+  }
+
+  &-btnMore {
+    height: 24px;
+  }
+
+  &-action {
+    font-style: italic;
+
+    li {
+      background-color: $white;
+    }
+  }
+
+  .svg-icon--arrow {
+    width: 9px;
+    height: 7px;
+  }
+}
+
+.bControlPanel {
+  font-size: 12px;
+
+  &-title {
+    width: auto;
+    border-bottom: 3px solid $blue;
+
+    &--red {
+      color: $red;
+    }
+  }
+
+  .svg-icon--list {
+    width: 16px;
+    height: 18px;
+  }
+
+  .svg-icon--camera {
+    width: 20px;
+    height: 17px;
+  }
+}
+
+.bFooter {
+  width: 100%;
+  height: 53px;
+  border-top: 1px solid $border;
+  color: lighten($gray, 59.2%);
+  font-size: 12px;
+  font-style: italic;
+}

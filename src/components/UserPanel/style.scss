@@ -1,0 +1,14 @@
+@import '@/CommonStyles/basis/variables.scss';
+
+.bUserPanel {
+  height: 67px;
+  border-bottom: 1px solid $border;
+  color: lighten($gray, 16.2%);
+  font-size: 12px;
+
+  &-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+}

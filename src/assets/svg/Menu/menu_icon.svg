@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.4;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="menu_icon" data-name="menu icon" class="cls-1">
+    <rect class="cls-2" y="14" width="19" height="3" rx="1.5" ry="1.5"/>
+    <rect id="Rectangle_2_copy" data-name="Rectangle 2 copy" class="cls-2" y="7" width="19" height="3" rx="1.5" ry="1.5"/>
+    <rect id="Rectangle_2_copy_2" data-name="Rectangle 2 copy 2" class="cls-2" width="19" height="3" rx="1.5" ry="1.5"/>
+  </g>
+</svg>

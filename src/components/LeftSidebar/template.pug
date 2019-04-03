@@ -1,0 +1,20 @@
+.bLeftSidebar
+  site-menu
+  message-record
+
+  b-nav.bLeftNavbar(vertical)
+    b-nav-item.bLeftNavbar-item(active to='/complains')
+      svg-icon(name='LeftSidebar/icon1')
+      .bLeftNavbar-textLink Complaints
+    b-nav-item.bLeftNavbar-item(to='/previous-notes' svgClass='notes') 
+      svg-icon(name='LeftSidebar/icon2')
+      .bLeftNavbar-textLink Previous notes
+    b-nav-item.bLeftNavbar-item(to='/patient' svgClass='patient')
+      svg-icon(name='LeftSidebar/icon3')
+      .bLeftNavbar-textLink Patient
+    b-nav-item.bLeftNavbar-item(to='/medical-records' svgClass='medical')
+      svg-icon(name='LeftSidebar/icon4')
+      .bLeftNavbar-textLink Medical records
+    b-nav-item.bLeftNavbar-item(to='/chat')
+      svg-icon(name='LeftSidebar/icon5' svgClass='chat')
+      .bLeftNavbar-textLink Chat

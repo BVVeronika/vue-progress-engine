@@ -1,0 +1,72 @@
+@import '@/CommonStyles/basis/variables.scss';
+
+.bChatPanel {
+
+  &-messageBlock {
+    position: relative;
+    height: calc(100vh - 67px - 53px);
+    color: lighten($gray, 40.2%);
+    font-size: 12px;
+  }
+
+  &-fieldInputMessage {
+    height: 53px;
+    border-top: 1px solid $border;
+  }
+
+  &-input {
+    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+    &::placeholder {
+      color: lighten($gray, 59.2%);
+      font-size: 13px;
+      font-style: italic;
+    }
+  }
+
+  .svg-icon--message {
+    width: 42px;
+    height: 38px;
+  }
+}
+
+.bBtnControl {
+  position: absolute;
+  top: 50%;
+  right: -27px;
+  perspective: 400px;
+  display: inline-block;
+  width: 40px;
+  height: 15px;
+  transform: rotate(90deg);
+
+  &::before {
+    border: 1px solid $border;
+    border-bottom: 0;
+    background-color: $white;
+    transform: rotateX(40deg);
+    transform-origin: 50% 100%;
+    border-radius: 10px 10px 0 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: '';
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &-icon.svg-icon {
+    position: absolute;
+    top: 3px;
+    right: -7px;
+    z-index: 99;
+    width: 15px;
+    height: 22px;
+    transform: rotate(90deg);
+  }
+}

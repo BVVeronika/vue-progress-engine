@@ -1,0 +1,13 @@
+.bMessageRecord
+  button.bMessageRecord-btn(type='button')
+    svg-icon(name='MessageRecord/record_icon' svgClass='record')
+  .bMessageRecord-btnDesc Start
+
+  .bMessageRecord-time 00:05
+  | minutes remainizng
+
+  .bActionBlock
+    button.bActionBlock-btn(type='button' @click='onActiveMicRec' :class='{ _active: isActiveMic }')
+      svg-icon(name='MessageRecord/mic_icon' svgClass='mic')
+    button.bActionBlock-btn(type='button' @click='onActiveVideoRec' :class='{ _active: isActiveCamera }')
+      svg-icon(name='MessageRecord/video_camera_icon' svgClass='camera')

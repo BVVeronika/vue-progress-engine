@@ -1,0 +1,52 @@
+{
+  "name": "vue_project_for_progress_engine",
+  "version": "0.1.0",
+  "author": "Veronika Baranova(Dev_nikki)",
+  "email": "baranova.veronika91@gmail.com",
+  "private": true,
+  "scripts": {
+    "start": "vue-cli-service serve --mode development --port 8090",
+    "serve": "vue-cli-service serve --mode production",
+    "local": "vue-cli-service serve --mode local",
+    "build:prod": "vue-cli-service build --mode production",
+    "build:dev": "vue-cli-service build --mode development",
+    "lint": "vue-cli-service lint",
+    "lint:style": "vue-cli-service lint:style",
+    "test:unit": "vue-cli-service test:unit",
+    "test": "testcafe chrome tests/e2e/test.js --app \"npm start\" --app-init-delay 10000 -S -s screenshots"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.15",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@ascendancyy/vue-cli-plugin-stylelint": "^1.1.2",
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-eslint": "^3.5.0",
+    "@vue/cli-plugin-unit-mocha": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "axios": "^0.18.0",
+    "babel-eslint": "^10.0.1",
+    "chai": "^4.1.2",
+    "eslint": "^5.8.0",
+    "eslint-plugin-testcafe": "^0.2.1",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
+    "stylelint": "^9.10.1",
+    "stylelint-config-primer": "^2.2.5",
+    "stylelint-config-standard": "^18.2.0",
+    "svgo": "^1.1.0",
+    "svgo-loader": "^2.1.0",
+    "testcafe": "^1.1.0",
+    "vue-cli-plugin-axios": "0.0.4",
+    "vue-cli-plugin-pug": "^1.0.7",
+    "vue-cli-plugin-svg-sprite": "^0.3.1",
+    "vue-template-compiler": "^2.5.21"
+  }
+}
