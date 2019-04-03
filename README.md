@@ -1,4 +1,3 @@
-# funds_platform
 
 ## Project setup
 ```
